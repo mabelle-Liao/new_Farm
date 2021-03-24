@@ -1,0 +1,163 @@
+
+
+
+
+
+#mainWrapper{
+  width:80%;
+  margin:0 auto;
+}
+#header{
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	margin: 20px auto 0;
+	border-radius: 10px;
+}
+
+#header h2{
+	font-size: 4rem;
+}
+
+#cel,#far{
+  font-size:2.5rem;
+  padding: 0 20px;
+  margin: 0 5px;
+  background-color: #000d16;
+}
+
+.localInformation{
+	font-size: 1.3rem;
+	padding: 20px 0;
+	width: 100%;
+	margin:10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.dateAndTime, .temp-Hum-Wind,.temperature{
+		color: white;
+		background-color: rgba(0, 0, 0, 0.5);
+		width: 31%;
+		height: auto;
+		padding: 20px;
+		border-radius: 10px;
+}
+
+.weatherCondition{
+  text-transform:uppercase;
+}
+.right{
+	float: right;
+}
+
+.forecast{
+		color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+
+.temperature{
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.degree{
+	font-size: 4.5rem;
+}
+.marg{
+	width: 31%;
+	margin:20px auto;
+	border-bottom: 1px solid white;
+}
+
+.font-sizeWC{
+	font-size: 1rem;
+}
+
+.forecast{
+    display: flex;
+    flex-flow: row wrap;
+	justify-content: space-between;
+    font-size: 1rem;
+}
+
+.footer{
+	width: 100%;
+	background:#1e1f26;
+	color: white;
+	font-weight: 500;
+	padding: 15px;
+	text-align: center;
+	font-size: 1.1rem;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+ #header h1{
+    font-size: 4.5rem;
+  }
+    #cel,#far{
+      font-size: 2rem;
+  }
+  .temperature,.dateAndTime,.temp-Hum-Wind{
+  	line-height: 25px;
+  	font-size: 1.3rem;
+  	width: 100%;
+  	margin-bottom: 30px;
+  }
+  .temp-Hum-Wind{
+    margin-bottom:0;
+  }
+
+  .deg{
+  	padding:40px;
+  }
+  #iconToday,.degree{
+    font-size:5rem;
+  }
+  .weatherCondition{
+    font-size:3rem;
+  }
+  .localInformation{
+      display: block;
+      padding: 20px 0px;
+  }
+  .dateAndTime,.temp-Hum-Wind{
+    font-size:2rem;
+  }
+  .forecast{
+  	font-size: 2rem;
+  	flex-flow: row wrap;
+  }
+  .forecast .deg{
+    padding:10px;
+  }
+  .font-sizeWC {
+    font-size:1.6rem;
+  }
+  .marg{
+	  width: 41%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+	.marg{
+		width: 100%;
+	}
+	.font-sizeWC{
+		font-size:1.5rem;
+	}
+}

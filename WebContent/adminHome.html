@@ -1,0 +1,370 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>果園守衛系統</title>
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  console.log(x.length);
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+<style>
+	input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
+}
+input[type="button"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+    </style>
+<link rel="stylesheet" href="header.css" />
+<link rel="stylesheet" type="text/css" href="test.css"> 
+</head>
+<body>
+<center><img src="dgi.png" width="338" height="100">
+<img src="apj sir.png" align="right"  width="100" height="100"></center>
+<div class="w3-container">
+  <div class="w3-bar w3-black">
+  	<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">使用者首頁</button>
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Tokyo')">果園狀況顯示</button>
+     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo1');window.open('https://reurl.cc/nnqX5v', '_blank')">果園管理技術資料</button>
+     <a href="http://192.168.22.195:8080/donkeyTest/adminLogin.jsp" class="w3-bar-item w3-button tablink">登出
+     </a>
+  </div>
+<div id="Paris" class="w3-container w3-border city" style="display:none">
+  <br>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+
+
+    <link rel="icon" href="Favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+<body>
+
+
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+        <img src="images/donkeycar.png"  border=3 width=450></img>
+            <section>
+  <!--for demo wrap-->
+  <div class="tbl-header">
+  
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th style="font-weight:bold"><font size="4" color=	#484891>姓名</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>果園地址</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>Email</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>連絡電話</th>
+          <th style="font-weight:bold;text-align:center"><font size="4" color=	#484891>動作</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+      	  <td style="font-weight:bold"><font size="3" color=	#336666>Chris Chen</td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>新北市中和區安樂路</td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>AIOT0804@gmail.com</td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>(02)6631-6666</td>
+          <td><input type="button" name="start" value="開始駕車"  onclick="window.open('http://192.168.22.63:5000/activate', '_blank')"></td>
+      </tbody>
+    </table>
+  </div>
+</section>
+        </div>
+        <br>
+    </div>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html> 
+  </div>   
+  
+  <div id="Tokyo" class="w3-container w3-border city">
+  
+<section>
+  <!--for demo wrap-->
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+         <th style="font-weight:bold"><font size="4" color=	#484891>區域名稱</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>區域圖片</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>區域狀態燈</th>
+          <th style="font-weight:bold"><font size="4" color=	#484891>狀態描述</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+        <td style="font-weight:bold"><img src="images/select_A.png" alt="" border=3 height=50 width=50></img><font size="3" color=	#336666>區域A</td>
+          <td><img src="images/110.jpg" alt="" border=3 height=100 width=100></img></td>
+          <td style="font-weight:bold"><img src="images/green.png" alt="" border=3 height=50 width=50></td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>A區域正常狀態，不需擔心 </td>
+        </tr>
+		<tr>
+        <td style="font-weight:bold"><img src="images/select_B.png" alt="" border=3 height=50 width=50></img><font size="3" color=	#336666>區域B</td>
+          <td style="font-weight:bold"><img src="images/1.jpg" alt="" border=3 height=100 width=100></img></td>
+          <td style="font-weight:bold"><img src="images/red.gif" alt="" border=3 height=50 width=50></td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>B區域需要處理</td>
+        </tr>
+        <tr>
+        <td style="font-weight:bold"><img src="images/select_C.png" alt="" border=3 height=50 width=50></img><font size="3" color=	#336666>區域C</td>
+          <td style="font-weight:bold"><img src="images/2.jpg" alt="" border=3 height=100 width=100></img></td>
+          <td style="font-weight:bold"><img src="images/green.png" alt="" border=3 height=50 width=50></td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>C區域正常狀態，不需擔心</td>
+        </tr>
+        <tr>
+        <td style="font-weight:bold"><img src="images/select_D.png" alt="" border=3 height=50 width=50></img><font size="3" color=	#336666>區域D</td>
+          <td style="font-weight:bold"><img src="images/3.jpg" alt="" border=3 height=100 width=100></img></td>
+          <td style="font-weight:bold"><img src="images/green.png" alt="" border=3 height=50 width=50></td>
+          <td style="font-weight:bold"><font size="3" color=	#336666>D區域正常狀態，不需擔心</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</div>
+<div id="Tokyo1" class="w3-container w3-border city" style="display:none">
+   
+<section>
+  <div class="wrap">
+		<div class="comp">
+			<div class="monitor">
+				<div class="mid">
+					<div class="site">
+						<div class="topbar">
+							<div class="cerrar">
+								<div class="circl"></div>
+								<div class="circl"></div>
+								<div class="circl"></div>
+							</div>
+						</div>
+						<div class="inhead">
+							<div class="mid">
+								<div class="item"></div>
+							</div>
+							<div class="mid txr">
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+								<div class="item"></div>
+							</div>
+						</div>
+						<div class="inslid">
+							
+						</div>
+						<div class="incont">
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="item"></div>
+							<div class="wid">
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="itwid">
+									<div>
+										<div class="contfoot"></div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="infoot">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mid codigo">
+					<div class="line">
+						<div class="item var"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item var"></div>
+						<div class="item atr"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item lrg fun"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item lrg atr"></div>
+						<div class="item min fun"></div>
+						<div class="item min cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item atr"></div>
+						<div class="item min fun"></div>
+						<div class="item atr"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item min cont"></div>
+						<div class="item lrg atr"></div>
+						<div class="item  fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min atr"></div>
+						<div class="item lrg fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab2">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab2">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg fun"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab4">
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab1">
+						<div class="item atr"></div>
+						<div class="item var"></div>
+						<div class="item cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab3">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line tab4">
+						<div class="item min atr"></div>
+						<div class="item min fun"></div>
+						<div class="item lrg atr"></div>
+						<div class="item lrg cont"></div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="line">
+						<div class="item min var"></div>
+						<div class="clearfix"></div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="base">
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+</div>
+    <hr class="new1">
+  <center><h5>Note: 任何問題發生可聯繫 AIOT08 第四組.
+本網站由AIOT08 第四組製作和設計</h5></center>
+  <hr class="new1">
+<center><h5>All Right Reserved @ AIOT08 第四組 :: 2020-2021</h5></center> 
+  <hr class="new1">
+<br>
+</body>
+</html>
