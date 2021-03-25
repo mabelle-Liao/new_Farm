@@ -1,0 +1,9 @@
+diff a/WebContent/123.txt b/WebContent/123.txt	(rejected hunks)
+@@ -1 +1,5 @@
+-哈囉你好嗎
+\ No newline at end of file
++<<<<<<< HEAD
++哈囉你好嗎
++=======
++GGGGGGG
++>>>>>>> 96fe1e6665f026c1825758f1be02b6c9d029475b
